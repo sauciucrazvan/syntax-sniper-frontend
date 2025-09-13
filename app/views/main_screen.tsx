@@ -28,7 +28,7 @@ export default function MainScreen() {
         );
         setLoading(true);
         setError(null);
-        const response = await fetch(`http://localhost:8080/`, {
+        const response = await fetch(`https://api.razvansauciuc.dev:8080/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

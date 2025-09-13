@@ -20,7 +20,7 @@ const firaMono = Fira_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Programming Language Guesser",
+  title: "Syntax Sniper",
   description: "Guess the programming language of a code snippet!",
 };
 
