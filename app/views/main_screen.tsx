@@ -28,7 +28,7 @@ export default function MainScreen() {
         );
         setLoading(true);
         setError(null);
-        const response = await fetch(`http://localhost:8080/`, {
+        const response = await fetch(`https://api.razvansauciuc.dev:8080/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -130,7 +130,7 @@ export default function MainScreen() {
         ))}
       </div>
 
-      <pre className="w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono text-start">
+      <pre className="w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono">
         <code>{data.code}</code>
       </pre>
 
