@@ -130,7 +130,7 @@ export default function MainScreen() {
         ))}
       </div>
 
-      <pre className="w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono">
+      <pre className="w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono text-start">
         <code>{data.code}</code>
       </pre>
 
