@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center py-8 text-center">
-      <h1 className="text-xl font-bold">GUESS THE PROGRAMMING LANGUAGE</h1>
+      <h1 className="text-xl font-bold">SYNTAX SNIPER</h1>
 
       {playing ? (
         <MainScreen />
