@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { Braces } from "lucide-react";
 
 export default function Home() {
   const [playing, setPlaying] = useState(false);
@@ -16,7 +17,10 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center py-8 text-center">
-      <h1 className="text-xl font-bold">SYNTAX SNIPER</h1>
+      <div className="flex flex-col items-center gap-1">
+        <Braces />
+        <h1 className="text-xl font-bold">SYNTAX SNIPER</h1>
+      </div>
 
       {playing ? (
         <MainScreen />
