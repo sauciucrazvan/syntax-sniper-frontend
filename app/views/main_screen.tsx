@@ -130,8 +130,8 @@ export default function MainScreen() {
         ))}
       </div>
 
-      <pre className="w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono text-start">
-        <code className="w-full">{data.code}</code>
+      <pre className="flex-1 w-full p-2 overflow-x-auto bg-foreground/5 border border-foreground/10 rounded text-sm font-mono text-start">
+        <code className="block w-full">{data.code}</code>
       </pre>
 
       <div className="flex flex-row gap-1">
