@@ -28,7 +28,7 @@ export default function MainScreen() {
         );
         setLoading(true);
         setError(null);
-        const response = await fetch(`https://api.razvansauciuc.dev/`, {
+        const response = await fetch(`http://localhost:8080/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -86,7 +86,7 @@ export default function MainScreen() {
 
   if (lives <= 0) {
     return (
-      <section className="pt-4 max-w-[60%] min-w-[60%] flex flex-col gap-4 items-center">
+      <section className="pt-4 w-[90%] lg:w-[60%] flex flex-col gap-4 items-center">
         <div className="text-lg font-bold --font-roboto-condensed bg-gradient-to-br from-red-500 to-red-700 bg-clip-text text-transparent">
           GAME OVER!
         </div>
