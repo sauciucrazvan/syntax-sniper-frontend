@@ -28,7 +28,7 @@ export default function MainScreen() {
         );
         setLoading(true);
         setError(null);
-        const response = await fetch(`http://localhost:8080/`, {
+        const response = await fetch(`https://api.razvansauciuc.dev/`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -95,7 +95,7 @@ export default function MainScreen() {
           Your final score: <b>{score} points</b>
           {score === bestScore && " (new best score!)"}
           <br />
-          {score < 0
+          {score < 1
             ? "Better luck next time!"
             : score >= 10
             ? "Well played my man!"
